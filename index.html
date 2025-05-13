@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="500x500"
+      href="/assets/favicon-500-e2c676c9.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALwSURBVHgBrVZNdtpADJbGQ166Kr0BOUFJ8tr3uio5QcMJmpyA7JM05gHr0BMkN0h6Aui2LYGcIPQEuLuCPaNKQ6Dmx8YEtDDYY3+fNCN9EkJG+xnWSoqwqDx8Cwh595AgsIYeLVLvXe6ynQUH0xa75DNwrkKWzvg2D+lQfQZr/x2F1Q+v/P7ahF1qCJG/mmjBAlTY3MfzaiZCFxXpOyIowQZGiPcKw9N99INEQiEj0i0+myJswxB6iNFRnFTF1y3lbrZGJsZYHMBd/NGUkM/sComOYdvGR9Mx9bPJLY7J/AJZ3YX1EySJpM3IxRgeJ1K0J1ur3a3VV7ARGfY5yXpA9rcFuNfa9DmAp9gLeRt5EqWvxw5hSa5ZgKXWpNhBYTAKw/buLgTzmdiJGieIs3hcKhVHKArCZIUUloDr8avSpjkPnGScGJ+WuJ8XLi1yBSkRRQbK73cuevMrUkLW5I4JbBCGpjdRF1dadnnyCZdGRcUEwQmGo/BoXqacpnqqYiP7qHS4ELU4Mb+dU0LWYY2gXtOS85NtjJO5iLhOkbd/OAzLSXqJCFeQYET0RictjiJzGyPjssm1kOz3A325n/SNJMuKfOBtBftn0RVox87EkQFSwGQnaWBp0Y3XcaDIYm/JSmH6f1yjMBxG5TQwUapV0Uk5aWme3kLSUMGlsCtgOCEyp2k97ldUO35uZakmXI7pwdQHsKA0rB6i9izAB975XhLIj1GjqD1qQYYGLThOvCUjF1+ggog5R1dNgpAmzWSZNFgUSn5dloqKsPZVYEmUh/rLrZTEpN4mBa8UfWZHS5DNAhk9HJdcBIwMVJO84sS5lm3vmsYTOzbgwr5ZZyKI1/RMtjzYunT7UoyxTRF8Qw+u4YUmo8ahOp9m+EzH53GgLGPB/7ehtAmZYMlcE380QyhbKzOIeAWbGovH/Dwz9iHBOmHNf+5ha4+Jkg+HOxfNZYurBuECGc/n7vlxlYpAxr6JkNHio76lcdQK1x/1/wEYvqO3P7nFVgAAAABJRU5ErkJggg=="
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Anuphan:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    
+
+    <title>Rolling Sky Ball</title>
+    <script type="module" crossorigin src="/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modal-e34384d1.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-0d4ab8a2.js">
+    <link rel="stylesheet" href="/assets/modal-6b5d86f6.css">
+    <link rel="stylesheet" href="/assets/vendor-0ded8c46.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+  <div class="header-wrapper">
+    <a class="header-link-img" href="/"
+      ><img
+        src="/assets/favicon-500-e2c676c9.png"
+        alt="Logo image"
+        class="header-logo"
+        width="32"
+        height="32"
+    /></a>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#hakkımızda" class="nav-link">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <a href="#kutularımız" class="nav-link">Kutularımız Nasıl Çalışır?</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#neler" class="nav-link">Neler Gönderiyoruz?</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#neden" class="nav-link">Neden Yeşil Sürpriz?</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#galeri" class="nav-link">Galeri</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#müşteri" class="nav-link">Müşteri Yorumları</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#sss" class="nav-link">FAQ</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#bize" class="nav-link">Bize Ulaşın</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="header-burger" data-modal-open>
+      <img
+        width="24"
+        height="24"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAYAAABxlTA0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACsSURBVHgB7dixDcIwEEDRMxMwAiswETPQUwSJAViBiViBEbIAORIJqrROhKP3KpfW6a75EQAAAAAAAAAAwP8pUckzb6cc4j4+99G08iq77I7l8ogKdlFJDqWL5oc7ycN3UaqoNuDxYxsY7k/po5J6G5zDeTqvaF+f+b4GAAAAQIP04Bk9eGF68Ar04CXpwQAAAECz9OAZPXhhevAK9OAl6cEAAAAAAAAAALB5H1dJTfKdrIDPAAAAAElFTkSuQmCC"
+        alt="Burger button"
+        class="header-burger-img"
+      />
+    </button>
+  </div>
+</header>
+
+      <div id="modal" class="backdrop is-hidden" data-backdrop>
+  <div class="modal">
+    <nav class="modal-nav is-hidden" data-modal>
+      <ul class="modal-nav-list">
+        <li class="modal-nav-item">
+          <a href="/" class="modal-nav-link">Home</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#hakkımızda" class="modal-nav-link">Hakkımızda</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#kutularımız" class="modal-nav-link"
+            >Kutularımız Nasıl Çalışır?</a
+          >
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#neler" class="modal-nav-link">Neler Gönderiyoruz?</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#neden" class="modal-nav-link">Neden Yeşil Sürpriz?</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#galeri" class="modal-nav-link">Galeri</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#sss" class="modal-nav-link">FAQ</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#bize" class="modal-nav-link">Bize Ulaşın</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+      <section class="hero">
+  <div class="hero-wrap-dop">
+    <div class="hero-wrap-content">
+      <h1 class="hero-wrap-title-desk">
+        Her Ay Sürpriz Dolu Bir Bitki Kutusu!
+      </h1>
+
+      <p class="hero-wrap-text-one">
+        Kaktüs-mutanlar, camda yosunlar, minyatür ormanlar...
+      </p>
+      <p class="hero-wrap-text-two">
+        Yeşil Sürpriz ile doğanın en ilginç halleri evine geliyor.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section id="hakkımızda" class="hakkımızda">
+  <div class="container">
+    <div class="hakkımızda-wrap">
+      <div class="hakkımızda-wrap-text">
+        <h3 class="hakkımızda-text-title">Hakkımızda</h3>
+        <p class="hakkımızda-text-parag">
+          Yeşil Sürpriz”, doğaya hayran ama klasik saksı çiçeklerinden sıkılmış
+          meraklılar için kuruldu.
+        </p>
+      </div>
+
+      <div class="hakkımızda-wrap-content">
+        <div class="hakkımızda-wrap-content-text">
+          <p class="hakkımızda-content-text">
+            Bitkilerin sadece dekoratif değil, aynı zamanda ilham verici ve
+            eğlenceli olabileceğine inanıyoruz.
+          </p>
+          <p class="hakkımızda-content-text">
+            Her ay sana benzersiz bir bitki deneyimi sunmak için dünyanın dört
+            bir yanından sıradışı türler seçiyoruz: etçil bitkiler, kokusuz
+            çiçekler, minyatür ormanlar ve daha nicesi.
+          </p>
+          <p class="hakkımızda-content-text">
+            Ekibimiz botanik tutkunu, ekolojik duyarlılığı yüksek kişilerden
+            oluşuyor. Kutularımızda kullanılan tüm materyaller geri
+            dönüştürülebilir ya da doğada çözünebilir.
+          </p>
+          <p class="hakkımızda-content-text">
+            Sen sadece kutunu aç, şaşır, ve yeşil mutluluğu yaşa!
+          </p>
+        </div>
+
+        <picture class="hakkımızda-wrap-img">
+          <source
+            srcset="/assets/hakkımızda-desk-1x-66a02c83.jpg 1x, /assets/hakkımızda-desk-2x-062effa2.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="/assets/hakkımızda-mob-1x-549b0712.jpg 1x, /assets/hakkımızda-mob-2x-1c025115.jpg 2x"
+            media="(max-width: 1439px)"
+          />
+          <img
+            src="/assets/hakkımızda-mob-1x-549b0712.jpg"
+            alt="Yeşil Sürpriz”, doğaya hayran ama klasik saksı çiçeklerinden sıkılmış meraklılar için kuruldu.
+            "
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="kutularımız" class="kutularımız">
+  <div class="container">
+    <div class="kutularımız-wrap">
+      <div class="kutularımız-wrap-text">
+        <h3 class="kutularımız-text-title">Kutularımız Nasıl Çalışır?</h3>
+        <p class="kutularımız-text-parag">
+          Adım adım: aboneliğin nasıl çalıştığı.
+        </p>
+      </div>
+
+      <div class="kutularımız-wrap-content">
+        <div class="kutularımız-wrap-card">
+          <div class="kutularımız-card-title">
+            <p class="kutularımız-card-number">Adım 1</p>
+            <p class="kutularımız-card-t-title">Aboneliğini Seç:</p>
+          </div>
+          <p class="kutularımız-card-text">
+            Web sitemiz üzerinden abonelik planını belirle. Aylık, 3 aylık ya da
+            6 aylık esnek seçenekler sunuyoruz. Kısa dönem denemek isteyenler
+            için “Tek Seferlik Sürpriz Kutu” seçeneği de mevcut. Tüm planlar
+            iptal edilebilir, değiştirmesi kolaydır.
+          </p>
+        </div>
+
+        <div class="kutularımız-wrap-card">
+          <div class="kutularımız-card-title">
+            <p class="kutularımız-card-number">Adım 2</p>
+            <p class="kutularımız-card-t-title">Profilini Oluştur:</p>
+          </div>
+          <p class="kutularımız-card-text">
+            Bitkilerle ilgili tercihlerini bizimle paylaş: fazla ışık alan mı,
+            gölgede kalan mı? Evcil hayvan var mı? Bu bilgiler sayesinde sana en
+            uygun türleri seçiyoruz.
+          </p>
+        </div>
+
+        <div class="kutularımız-wrap-card">
+          <div class="kutularımız-card-title">
+            <p class="kutularımız-card-number">Adım 3</p>
+            <p class="kutularımız-card-t-title">Hazırlık Süreci:</p>
+          </div>
+          <p class="kutularımız-card-text">
+            Her ay başında ekibimiz senin için seçilmiş sıradışı bitkini özenle
+            paketler. Paketleme sırasında bitkinin zarar görmemesi için özel
+            destek materyalleri kullanılır. Ayrıca, bitkinin sağlık durumu
+            kontrol edilir.
+          </p>
+        </div>
+
+        <div class="kutularımız-wrap-card">
+          <div class="kutularımız-card-title">
+            <p class="kutularımız-card-number">Adım 4</p>
+            <p class="kutularımız-card-t-title">Teslimat:</p>
+          </div>
+          <p class="kutularımız-card-text">
+            Kargon hızlı ve güvenli biçimde adresine gönderilir. İstanbul içi 24
+            saat, diğer şehirler için ortalama 2–3 iş günü içinde elinde olur.
+            Kutu takibi için SMS ve mail bilgilendirmeleri yapılır.
+          </p>
+        </div>
+
+        <div class="kutularımız-wrap-card">
+          <div class="kutularımız-card-title">
+            <p class="kutularımız-card-number">Adım 5</p>
+            <p class="kutularımız-card-t-title">Yeşil Sürpriz Başlasın!</p>
+          </div>
+          <p class="kutularımız-card-text">
+            Kutunu aç, bitkini keşfet, kartları oku ve küçük hediyeni bul!
+            Ayrıca QR kodla özel video içeriğe ulaşarak bakım detaylarını
+            izleyebilirsin.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="neler" class="neler">
+  <div class="container">
+    <div class="neler-wrap">
+      <div class="neler-wrap-text">
+        <h3 class="neler-text-title">Neler Gönderiyoruz?</h3>
+      </div>
+
+      <div class="neler-wrap-content">
+        <div class="neler-wrap-card">
+          <div class="neler-dop">
+            <p class="neler-text-parag">
+              Hangi tür bitkiler dahil — kaktüs mutantları, yosun kavanozları ve
+              daha fazlası.
+            </p>
+            <p class="neler-card-bold">Her Kutuda Bulabileceklerin:</p>
+            <ul class="neler-wrap-li">
+              <li class="neler-text-li">
+                1 adet canlı, nadir ya da sıradışı bitki
+              </li>
+              <li class="neler-text-li">
+                Bitkinin adı, kökeni ve hikayesini içeren bilgi kartı
+              </li>
+              <li class="neler-text-li">
+                Pratik bakım rehberi (basılı + QR ile videolu içerik)
+              </li>
+              <li class="neler-text-li">
+                El yapımı dekoratif obje (taş, minyatür figür, tahta stand vb.)
+              </li>
+              <li class="neler-text-li">
+                Sürpriz ekstra: tohum paketi, doğal gübre örneği, mini cam vazo
+                gibi değişken hediyeler
+              </li>
+            </ul>
+          </div>
+          <picture class="hakkımızda-wrap-img">
+            <source
+              srcset="/assets/neler-desk1-1x-f5ae18fe.jpg 1x, /assets/neler-desk1-2x-770fba7e.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/assets/neler-mob1-1x-de1cc1df.jpg 1x, /assets/neler-mob1-1x-de1cc1df.jpg 2x"
+              media="(max-width: 1439px)"
+            />
+            <img
+              src="/assets/neler-mob1-1x-de1cc1df.jpg"
+              alt="Her Kutuda Bulabileceklerin"
+            />
+          </picture>
+        </div>
+
+        <div class="neler-wrap-card">
+          <div class="neler-dop neler-dop1">
+            <p class="neler-card-bold">
+              Gönderebileceğimiz Bazı İlginç Türler:
+            </p>
+            <ul class="neler-wrap-li">
+              <li class="neler-text-li">
+                Fittonia “sinirli bitki” — yaprakları elektrikli damar gibi
+              </li>
+              <li class="neler-text-li">
+                Cereus peruvianus “twisted” — kıvrımlı uzayan kaktüs
+              </li>
+              <li class="neler-text-li">
+                Tillandsia — toprak gerektirmeyen hava bitkisi
+              </li>
+              <li class="neler-text-li">
+                Drosera — yapışkanlı yapraklarıyla böcek yakalayan etçil tür
+              </li>
+              <li class="neler-text-li">
+                Yosun teraryumu — kapalı sistemde yaşayan minik ormanlar
+              </li>
+              <li class="neler-text-li">
+                Renksiz ama desenli yapraklara sahip koleksiyon bitkileri
+              </li>
+              <li class="neler-text-li">
+                Çocuklar için özel “bitki yetiştirme seti”
+              </li>
+            </ul>
+          </div>
+          <picture class="hakkımızda-wrap-img neler-dop2">
+            <source
+              srcset="/assets/neler-desk2-1x-3ccbff58.jpg 1x, /assets/neler-desk2-2x-5b881c55.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/assets/neler-mob2-1x-a5d60b96.jpg 1x, /assets/neler-mob2-1x-a5d60b96.jpg 2x"
+              media="(max-width: 1439px)"
+            />
+            <img
+              src="/assets/neler-mob2-1x-a5d60b96.jpg"
+              alt="Gönderebileceğimiz Bazı İlginç Türler"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="neden" class="neden">
+  <div class="container">
+    <div class="neden-wrap">
+      <div class="neden-wrap-text">
+        <h3 class="neden-text-title">Neden Yeşil Sürpriz?</h3>
+        <p class="neden-text-parag">
+          Eşsiz noktalar: özgünlük, özen, heyecan, yeşil felsefe.
+        </p>
+      </div>
+
+      <div class="neden-wrap-content">
+        <div class="neden-wrap-card">
+          <div class="neden-card-title">
+            <p class="neden-card-t-title">Sıradışılık:</p>
+          </div>
+          <p class="neden-card-text">
+            Biz sıradan salon bitkilerini değil, gerçekten şaşırtan türleri
+            seçiyoruz. Kutu açıldığında “Bu da ne böyle?!” dedirten türler
+            sunuyoruz. Bu sayede hem koleksiyon yapabilir hem de sevdiklerine
+            hediye edebileceğin eşsiz türlerle tanışırsın.
+          </p>
+        </div>
+
+        <div class="neden-wrap-card">
+          <div class="neden-card-title">
+            <p class="neden-card-t-title">Bakım Kolaylığı:</p>
+          </div>
+          <p class="neden-card-text">
+            Bitkilerimiz başlangıç seviyesi için idealdir. Her biri düşük su
+            ihtiyacına sahip, hızlı solmayan ve kolay adapte olan türlerden
+            seçilir. Kutu içindeki bakım kartları ve videolar sayesinde herhangi
+            bir deneyim gerekmez.
+          </p>
+        </div>
+
+        <div class="neden-wrap-card">
+          <div class="neden-card-title">
+            <p class="neden-card-t-title">Çevreci Paketleme:</p>
+          </div>
+          <p class="neden-card-text">
+            Kullandığımız tüm ambalajlar geri dönüştürülebilir ya da biyolojik
+            olarak parçalanabilir malzemelerden üretilir. Plastik yerine kraft
+            kutular, doğal yün destekler ve mürekkep bazlı kartlar kullanıyoruz.
+          </p>
+        </div>
+
+        <div class="neden-wrap-card">
+          <div class="neden-card-title">
+            <p class="neden-card-t-title">Sürpriz Etkisi:</p>
+          </div>
+          <p class="neden-card-text">
+            Her ay yeni bir bitkiyle tanışmanın heyecanı, sıradan kargo
+            paketlerinin ötesine geçiyor. Bitkiyle birlikte gelen bilgi
+            kartları, hikâyeler ve hediyeler, bu deneyimi bir bitki macerasına
+            dönüştürüyor.
+          </p>
+        </div>
+
+        <div class="neden-wrap-card">
+          <div class="neden-card-title">
+            <p class="neden-card-t-title">Koleksiyon Değeri:</p>
+          </div>
+          <p class="neden-card-text">
+            Zamanla eşsiz bir bitki koleksiyonu oluşturursun. Bazı türler
+            sınırlı sayıda sunulur, bu da koleksiyonunu özel kılar. Ayrıca kendi
+            bitki köşeni yaratman için ilham veririz!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="gallery" class="gallery">
+  <div class="container">
+    <div class="gallery-wrap">
+      <div class="gallery-wrap-text">
+        <h3 class="gallery-text-title">Galeri</h3>
+      </div>
+
+      <div class="gallery-wrap-content swiper nedenSwiper">
+        <div class="swiper-wrapper">
+          <div class="gallery-card swiper-slide">
+            <picture class="gallery-wrap-img img1">
+              <source
+                srcset="
+                  ../img/gallery/gallery1-1x.jpg 1x,
+                  ../img/gallery/gallery1-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/gallery/gallery1-1x.jpg 1x,
+                  ../img/gallery/gallery1-2x.jpg 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img src="../img/gallery/gallery1-1x.jpg" alt="Image gallery" />
+            </picture>
+          </div>
+
+          <div class="gallery-card swiper-slide">
+            <picture class="gallery-wrap-img">
+              <source
+                srcset="
+                  ../img/gallery/gallery2-1x.jpg 1x,
+                  ../img/gallery/gallery2-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/gallery/gallery2-1x.jpg 1x,
+                  ../img/gallery/gallery2-2x.jpg 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img src="../img/gallery/gallery2-1x.jpg" alt="Image gallery" />
+            </picture>
+          </div>
+
+          <div class="gallery-card swiper-slide">
+            <picture class="gallery-wrap-img">
+              <source
+                srcset="
+                  ../img/gallery/gallery3-1x.jpg 1x,
+                  ../img/gallery/gallery3-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/gallery/gallery3-1x.jpg 1x,
+                  ../img/gallery/gallery3-2x.jpg 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img src="../img/gallery/gallery3-1x.jpg" alt="Image gallery" />
+            </picture>
+          </div>
+
+          <div class="gallery-card swiper-slide">
+            <picture class="gallery-wrap-img">
+              <source
+                srcset="
+                  ../img/gallery/gallery4-1x.jpg 1x,
+                  ../img/gallery/gallery4-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/gallery/gallery4-1x.jpg 1x,
+                  ../img/gallery/gallery4-2x.jpg 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img src="../img/gallery/gallery4-1x.jpg" alt="Image gallery" />
+            </picture>
+          </div>
+
+          <div class="gallery-card swiper-slide">
+            <picture class="gallery-wrap-img">
+              <source
+                srcset="
+                  ../img/gallery/gallery5-1x.jpg 1x,
+                  ../img/gallery/gallery5-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/gallery/gallery5-1x.jpg 1x,
+                  ../img/gallery/gallery5-2x.jpg 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img src="../img/gallery/gallery5-1x.jpg" alt="Image gallery" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="müşteri" class="müşteri">
+  <div class="container">
+    <div class="müşteri-wrap">
+      <div class="müşteri-wrap-text">
+        <h3 class="müşteri-text-title">Müşteri Yorumları</h3>
+        <p class="müşteri-text-content">
+          Abonelerden gelen gerçek geri bildirim.
+        </p>
+      </div>
+
+      <div class="müşteri-wrap-content">
+        <picture class="müşteri-wrap-img img1">
+          <source
+            srcset="/assets/müşteri-desk-1x-67eb8a46.jpg 1x, /assets/müşteri-desk-2x-bac6028e.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="/assets/müşteri-mob-1x-b900e579.jpg 1x, /assets/müşteri-mob-2x-000d0dfa.jpg 2x"
+            media="(max-width: 1439px)"
+          />
+          <img
+            src="/assets/müşteri-mob-1x-b900e579.jpg"
+            alt="Abonelerden gelen gerçek geri bildirim."
+          />
+        </picture>
+
+        <div class="müşteri-wrap-swaper swiper musteriSwiper">
+          <div class="swiper-wrapper">
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "İlk kutuyu açtığımda yüzümde kocaman bir gülümseme oluştu.
+                İçinden çıkan bitki, hayatımda gördüğüm en ilginç türlerden
+                biriydi. Bilgi kartları o kadar detaylı ve keyifliydi ki,
+                okumaya doyamadım. Ayrıca yanında gelen minik figür evime tatlı
+                bir hava kattı. Yeşil Sürpriz gerçekten hayatıma renk kattı. Her
+                ay bir merak ve sevinçle kutuyu bekliyorum."
+              </p>
+              <p class="müşteri-card-name">Elif T.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Çocuğumla birlikte kutuyu açmak artık bizim ay ritualimiz oldu.
+                Her yeni bitkiyi onunla birlikte tanıyoruz, bakımını beraber
+                yapıyoruz. Bu hem eğlenceli hem de öğretici bir deneyim oldu
+                bizim için. Kutudan çıkan ekstra hediyeler de her seferinde hoş
+                bir sürpriz oluyor. Ailece bayıldık!"
+              </p>
+              <p class="müşteri-card-name">Meltem K.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Bitkilere karşı hiçbir ilgim yoktu ama bu kutu beni bağımlı
+                yaptı. Gelen her tür farklı ve büyüleyici. Artık evimin her
+                köşesinde minik bir bitki dostum var. Üstelik bakım kartları çok
+                açıklayıcı, hiç zorlanmadım. İlk defa bir abonelik hizmeti beni
+                bu kadar memnun etti."
+              </p>
+              <p class="müşteri-card-name">Özgür A.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Instagram’da gördüğüm andan itibaren ilgimi çekmişti. Gerçekten
+                görsellerde ne varsa aynısı geliyor. Hatta daha da güzel
+                diyebilirim. Bitkiyle gelen minik hikaye kartı çok etkileyici
+                olmuş. Her detay düşünülmüş, çok başarılı buldum."
+              </p>
+              <p class="müşteri-card-name">Selin M.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Yosun teraryumu kutusunu hayatımda ilk kez gördüm. Cam fanusun
+                içindeki minik dünya resmen beni büyüledi. Işık altında renk
+                değiştirmesi harikaydı. Kutu tasarımı, içerik uyumu, hepsi çok
+                profesyonel. Kısa sürede favori aboneliğim oldu."
+              </p>
+              <p class="müşteri-card-name">Baran E.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Bitki koleksiyoneriyim ve yıllardır farklı türler topluyorum.
+                Bu kutularda gelen türlerin birçoğunu daha önce görmemiştim.
+                Özellikle etçil bitkiler büyük ilgimi çekti. Bilgi kartlarında
+                bilimsel detaylar da yer alıyor, bu çok hoşuma gitti. Gerçekten
+                meraklısı için mükemmel."
+              </p>
+              <p class="müşteri-card-name">İpek D.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Minimal ve sade dekorasyon seven biri olarak bu kutular tam
+                bana göre. Gönderilen bitkiler hem estetik hem dayanıklı.
+                Kutudan çıkan doğal taşlar ve ahşap standlar da çok şık detaylar
+                katıyor. İçerik ve fiyat performansı gerçekten dengeli. Gönül
+                rahatlığıyla öneririm."
+              </p>
+              <p class="müşteri-card-name">Emir K.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Hediye olarak anneme gönderdim ve çok mutlu oldu. Özellikle
+                yanında gelen bakım rehberi sayesinde hiç zorlanmadı. Şimdi her
+                sabah kahvesini yeni bitkisinin yanında içiyor. Bir kutunun bu
+                kadar mutluluk getirmesi inanılmaz. Ben de kendime aldım hemen!"
+              </p>
+              <p class="müşteri-card-name">Sibel Ö.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Abonelik sürecinden teslimata kadar her şey çok sistemli
+                işliyor. Sorularımı hızlı yanıtlayan müşteri hizmetleri
+                sayesinde içim rahattı. İlk kutudan itibaren memnun kaldım.
+                Özenli kutulama ve özel içerikler gerçekten öne çıkıyor. Yıl
+                boyunca devam edeceğim."
+              </p>
+              <p class="müşteri-card-name">Cenk A.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Üniversite yurdunda yaşıyorum ve oda arkadaşım bana bu kutuyu
+                hediye etti. İlk defa kendi bitkime bakmak beni çok
+                heyecanlandırdı. Bitki bakımını hiç bilmiyordum ama gelen
+                kartlar çok yardımcı oldu. Şimdi odam daha yaşanabilir ve
+                huzurlu. Her öğrenciye öneririm."
+              </p>
+              <p class="müşteri-card-name">Pelin Ş.</p>
+            </div>
+
+            <div class="müşteri-card swiper-slide">
+              <p class="müşteri-card-text">
+                "Evcil hayvan sahibi olduğum için güvenli bitkiler önemliydi.
+                Profil kısmında bu bilgiyi ilettim ve uygun tür gönderildi.
+                Kediye zarar vermeyen ama görsel olarak da çok şık bir türdü. Bu
+                detaycılık beni çok etkiledi. Gerçekten güvenilir bir sistem."
+              </p>
+              <p class="müşteri-card-name">Ahmet U.</p>
+            </div>
+          </div>
+
+          <div class="musteri-wrap-btn">
+            <button class="musteri-btn-left">
+              <img src="../img/left.png" />
+            </button>
+
+            <button class="musteri-btn-right">
+              <img src="../img/right.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="sss" class="sss">
+  <div class="container">
+    <div class="sss-wrap">
+      <div class="sss-wrap-text">
+        <h3 class="sss-text-title">Sıkça Sorulan Sorular</h3>
+        <p class="sss-text-content">S.S.S.</p>
+      </div>
+
+      <div class="sss-wrap-content">
+        <div class="sss-wrap-card-one">
+          <div class="sss-wrap-card-title">
+            <p class="sss-card-text">
+              Kutudaki bitkiler ne kadar süre dayanıyor?
+            </p>
+            <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHqSURBVHgB7ZpNTsJAFMf/I2zcsTXGBC+gjRhgCTfwBsLOI7jEI3gC5QR6A9hKJFYvoAs/d+5MTMg4D6MhhYKZj1eTeb+kSXkN0/n/Ul5bWkAQBEEQBEGIE4WCaNR29eznq/FtIXNZQ+SIAESOCEDkiABEjghA5IgARI4IQOSIAESOCEDkiABEjgiAJeZPzTP8Exp79nMpw56OkVBZn6juME3fUQCtJKl8lPQFrZqlCwtcfwIHZgIDmgiYmYYv6wG+w1vjowck3BJ+w2skcMRXE2ST4DM8YS3APNZJM6XgEpaET2GJtYDPiWpzSlgW3jTiNiyxFpCazs8lYVV4l7OQUw9YIeGmmSRVOEJj0FghwhPOTfBHglkdZjZVtTkSXCTQd2kMGiuzaegjPOHlLEASzONtcyTofmaTtYS88BqqT/vydfHl9V5gNL7r+JCwLPxonHbgEe83Q64SOMMTQe4GbSVwhyeCvpZSr+2cK6jDTPlB0ZmjpO9ni6a2zR1+ul8EJk8C5jv7XC10eKKEwDy9vF1ubW6Q6NZMedFFUqamTk34IwQmuADi8fl1uEBCLlqpExP+GAywCCD+KmEa/jrtgQk2AcQqCdzhCVYBRJ6EIsIT7AKIrISiwhdOcz/p1c0CQRAEQRAEQWDnCwNPE7c0lfk9AAAAAElFTkSuQmCC" />
+          </div>
+          <p class="sss-card-text-content">
+            Gönderdiğimiz bitkiler genellikle dayanıklı ve düşük bakım
+            gerektiren türlerden seçilir. Doğru ışık, sulama ve ortam koşulları
+            sağlandığında aylarca hatta yıllarca yaşayabilirler. Her bitkiyle
+            birlikte detaylı bir bakım kılavuzu sunuyoruz. Böylece hangi
+            aralıklarla sulamanız, nereye yerleştirmeniz gerektiğini kolayca
+            öğrenirsiniz. Ayrıca kutu içinde gelen QR kod ile özel bakım
+            videolarına da ulaşabilirsiniz. İlk kez bitki bakacak kullanıcılar
+            için özel açıklamalar eklenmiştir. Bitki solarsa da destek
+            hattımızdan yardım alabilirsiniz.
+          </p>
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">Hediye olarak gönderebilir miyim?</p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">
+            Abonelik dışında tek seferlik kutu alabilir miyim?
+          </p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">Kutular her ay ne zaman gönderiliyor?</p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">
+            Bitkiler alerjik ya da zehirli olabilir mi?
+          </p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">Kutuların içeriği gerçekten sürpriz mi?</p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">Kutu içeriğinde bitki dışında neler var?</p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">Bitkiyi yanlışlıkla kurutursam ne olur?</p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">Aynı bitkiden iki kez gönderilir mi?</p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">Hangi şehirlerde teslimat yapılıyor?</p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">
+            Evde çok az ışık var, uygun bitki gönderilir mi?
+          </p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">Bitkiler canlı mı geliyor?</p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="sss-wrap-card">
+          <p class="sss-card-text">
+            Aboneliği istediğim zaman iptal edebilir miyim?
+          </p>
+          <img class="sss-card-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7dpBTsJAFAbgN8Vo3Lkjakw4gTaaKEu4AZxAPIlwEvAExqUrcCkRqZ7AhSLsWGk0wfE9Egw2gBU6nTfwvsRo2i74fx9l2gIghBBCCCGEEGL1KLDo+Gi/pkCdhjYHmwOVbwRBHxJgtQBycnRQx1+50ObESvDAso+BKmoMHNrsv6d0Pef7W2CY9QkgPgZdx8D4YvzQLuOTYH0CSIABPzHolEm4BINYFEBmlJDD80QVDGHxFhg34+1Qu209nEHM2BVAkiyBZQGEStjwdBtfYSa0K9YS2JwDwuicoL5UHjQ8hXaV4jwnsJ2AkazvZ7Sn66YmIQXMPXe7/b309hUWUMCf8YWRv7Ob3up0etewAPYFkGkl4HVEdnc7DS+vvRuYkxMFkKklKJVbpARnCiAmSnCqABJ3CZE/BfCjR4MDtNbl5v1jJerxbNcB88JJKB8f7p9HPX7pChjyvMiTvXQFaKUqzbugHPV49ivBSYarQ7xYwj8z49v/G544V0Cc4YlTBcQdnjhTgInwxIkCTIUnblwOTwoP6qLZCkqwINYFmA5P2BZAD0XwlngbDIYnLBdCw/BrZv/zI+wm4Ce8/n1H2ER4wqqApMMTNgVMC48aePMzD4awOAfMCE8PR4tgkPUJ+CO88e8IWJ+At5Su2gpP1sCik8PhE55CaHOiX5ERQgghhBBCCLGKvgH4ohAaNPJRaAAAAABJRU5ErkJggg==" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="bize" class="bize">
+  <div class="container">
+    <div class="bize-wrap">
+      <div class="bize-wrap-text">
+        <h3 class="bize-text-title">Bize Ulaşın</h3>
+        <p class="bize-text-content">
+          Herhangi bir sorunda veya önerin olduğunda bize ulaşmaktan çekinme.
+        </p>
+
+        <p class="bize-contact">
+          WhatsApp:
+          <a class="bize-tel" href="tel:+905312345678">+90 531 234 56 78</a>
+        </p>
+        <p class="bize-contact">
+          E-posta:
+          <a class="bize-mail" href="mailto:iinfo@fbxitoqiu.xyz"
+            >info@fbxitoqiu.xyz</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div id="modal-cookies" class="backdrop is-hidden" data-backdrop>
+  <div class="modal-cookies">
+    <div class="modal-cookies-text-wrap">
+      <p class="modal-cookies-text">
+        Web sitemizdeki deneyiminizi geliştirmek için çerezler kullanıyoruz. Bu
+        web sitesinde gezinerek çerez kullanımımızı kabul etmiş olursunuz.
+      </p>
+    </div>
+    <div class="modal-cookies-dop-btn">
+      <button type="button" class="modal-cookies-accept">
+        Çerezleri Kabul Et
+      </button>
+      <button type="button" class="modal-cookies-decline">
+        Çerezleri Reddet
+      </button>
+    </div>
+  </div>
+</div>
+
+      <footer class="footer">
+  <div class="footer-wrap">
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a href="./gizlilik.html" class="footer-nav-link"
+          >Gizlilik Politikası</a
+        >
+      </li>
+
+      <li class="footer-nav-img">
+        <img
+          width="2"
+          height="22"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAgCAYAAADXEMInAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA4SURBVHgB7cc7AQAgCEVRgeduFCvZxGZG0EDgh80ETt7pHuqrJlXJ4QQfYWoODlcf7wDAxrRYHBs/owvzATq3PwAAAABJRU5ErkJggg=="
+          class="footer-nav-img-i"
+        />
+      </li>
+
+      <li class="footer-nav-item">
+        <a href="./sartlar.html" class="footer-nav-link">Kullanım Şartları</a>
+      </li>
+
+      <li class="footer-nav-img">
+        <img
+          width="2"
+          height="22"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAgCAYAAADXEMInAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA4SURBVHgB7cc7AQAgCEVRgeduFCvZxGZG0EDgh80ETt7pHuqrJlXJ4QQfYWoODlcf7wDAxrRYHBs/owvzATq3PwAAAABJRU5ErkJggg=="
+          class="footer-nav-img-i"
+        />
+      </li>
+
+      <li class="footer-nav-item">
+        <a href="./cerez.html" class="footer-nav-link">Çerez Politikası</a>
+      </li>
+    </ul>
+
+    <p class="footer-text">
+      © 2025 Yeşil Sürpriz Tüm hakları saklıdır. fbxitoqiu.xyz
+    </p>
+  </div>
+</footer>
+
+    </div>
+
+    
+    
+    
+    
+  </body>
+</html>
