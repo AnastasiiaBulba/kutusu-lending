@@ -19,6 +19,7 @@
 
 .gallery-card {
   cursor: pointer;
+  min-width: 200px;
 }
 
 .nedenSwiper .swiper-slide {
@@ -26,6 +27,8 @@
   justify-content: center;
   align-items: center;
   width: auto !important;
+
+  flex-shrink: 0;
 }
 
 .nedenSwiper img {
