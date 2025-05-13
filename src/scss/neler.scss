@@ -1,0 +1,117 @@
+@import './common/vars';
+
+.neler {
+  scroll-margin-top: 80px;
+}
+
+.neler-wrap-text {
+  border-top: 1px solid $_brown;
+}
+
+.neler-text-title {
+  padding-top: 8px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $_graybrown;
+}
+
+.neler-text-parag {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: $_graybrown;
+  padding-bottom: 40px;
+}
+
+.neler-card-bold {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $_brown;
+  padding-bottom: 16px;
+}
+
+.neler-wrap-li {
+  padding-bottom: 40px;
+}
+
+.neler-text-li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $_brown;
+
+  position: relative;
+  padding-left: 20px;
+}
+
+.neler-text-li::before {
+  padding-left: 5px;
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hakkımızda-wrap-img img {
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .neler-wrap-text {
+    border-top: 1px solid $_brown;
+  }
+
+  .neler-text-title {
+    font-size: 18px;
+  }
+
+  .neler-wrap-card {
+    display: flex;
+    gap: 32px;
+  }
+
+  .neler-dop1 {
+    order: 1;
+  }
+
+  .neler-dop1 {
+    order: 2;
+  }
+
+  .neler-text-parag {
+    font-size: 28px;
+    width: 548px;
+  }
+
+  .neler-card-bold {
+    font-size: 20px;
+
+    padding-bottom: 24px;
+  }
+
+  .neler-wrap-li {
+    padding-bottom: 40px;
+  }
+
+  .neler-text-li {
+    font-size: 18px;
+    width: 544px;
+  }
+
+  .neler-text-li::before {
+    padding-left: 5px;
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .hakkımızda-wrap-img img {
+    padding-bottom: 80px;
+    width: 100%;
+  }
+}

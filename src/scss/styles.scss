@@ -1,0 +1,58 @@
+@import './modal.scss';
+@import './modal-cookies.scss';
+@import './header.scss';
+@import './hero.scss';
+@import './hakkımızda.scss';
+@import './kutularımız.scss';
+@import './neler.scss';
+@import './neden.scss';
+@import './galeri.scss';
+@import './müşteri.scss';
+@import './sss.scss';
+@import './bize.scss';
+@import './footer.scss';
+
+@import './common/reset';
+@import './common/mixins';
+@import './common/breakpoints';
+@import './common/vars';
+
+:root {
+  font-family: 'Urbanist', sans-serif;
+  color: $_brown;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: $_white;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: visible;
+}
+
+.is-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

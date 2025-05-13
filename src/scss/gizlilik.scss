@@ -1,0 +1,77 @@
+@import './common/vars';
+
+.gizlilik {
+  scroll-margin-top: 80px;
+}
+
+.gizlilik-body {
+  background-color: $_white;
+}
+
+.gizlilik-section {
+  padding-top: 80px;
+}
+
+.gizlilik-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: $_graybrown;
+  padding-bottom: 32px;
+}
+
+.gizlilik-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $_graybrown;
+}
+
+.paragraph {
+  padding-bottom: 32px;
+}
+
+.gizlilik-text-title {
+  font-size: 24px;
+  line-height: 1.3;
+  color: $_graybrown;
+  padding-bottom: 32px;
+}
+
+.gizlilik-text-bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $_graybrown;
+  padding-bottom: 32px;
+}
+
+.gizlilik-mail {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_graybrown;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .gizlilik-title {
+    font-size: 48px;
+  }
+
+  .gizlilik-text {
+    font-size: 18px;
+  }
+
+  .paragraph {
+    padding-bottom: 32px;
+  }
+
+  .gizlilik-text-title {
+    font-size: 28px;
+  }
+
+  .gizlilik-text-bold {
+    font-size: 20px;
+  }
+}

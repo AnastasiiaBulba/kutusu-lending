@@ -1,0 +1,85 @@
+@import './common/vars';
+
+.kutularımız {
+  scroll-margin-top: 80px;
+}
+
+.kutularımız-wrap-text {
+  border-top: 1px solid $_brown;
+}
+
+.kutularımız-text-title {
+  padding-top: 8px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $_graybrown;
+}
+
+.kutularımız-text-parag {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: $_graybrown;
+  padding-bottom: 40px;
+}
+
+.kutularımız-wrap-card {
+  border-top: 1px solid $_brown;
+  padding-bottom: 40px;
+}
+
+.kutularımız-card-number {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $_brown;
+  padding-top: 16px;
+}
+
+.kutularımız-card-t-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: $_graybrown;
+}
+
+.kutularımız-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $_brown;
+}
+
+@media screen and (min-width: 1440px) {
+  .kutularımız-text-title {
+    font-size: 18px;
+  }
+
+  .kutularımız-text-parag {
+    font-size: 28px;
+  }
+
+  .kutularımız-wrap-card {
+    border-top: 1px solid $_brown;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .kutularımız-card-number {
+    font-size: 20px;
+  }
+
+  .kutularımız-card-t-title {
+    font-size: 28px;
+  }
+
+  .kutularımız-card-text {
+    font-size: 18px;
+    width: 736px;
+    padding-top: 46px;
+  }
+}

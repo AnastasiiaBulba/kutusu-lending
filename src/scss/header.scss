@@ -1,0 +1,85 @@
+@import './common/vars';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $_brown;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 18px 18px 16px;
+}
+
+.nav {
+  display: none;
+}
+
+.header-burger {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  width: 44px;
+  height: 44px;
+}
+
+.header-burger-img {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding-top: 0;
+  }
+
+  .header-wrapper {
+    width: 1440px;
+    padding: 29px 160px 27px 160px;
+  }
+
+  .nav {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $_yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .header-logo {
+    margin-right: 52px;
+  }
+
+  .header-burger {
+    display: none;
+  }
+}

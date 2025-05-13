@@ -1,0 +1,83 @@
+@import './common/vars';
+
+.sss {
+  scroll-margin-top: 80px;
+}
+
+.sss-wrap-text {
+  border-top: 1px solid $_brown;
+}
+
+.sss-text-title {
+  padding-top: 8px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $_graybrown;
+}
+
+.sss-text-content {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: $_graybrown;
+  padding-bottom: 40px;
+}
+
+.sss-wrap-card-one {
+  border-top: 1px solid $_brown;
+}
+
+.sss-wrap-card {
+  border-top: 1px solid $_brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sss-wrap-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sss-card-text {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $_brown;
+}
+
+.sss-card-img {
+  width: 32px;
+  height: 32px;
+}
+
+.sss-card-text-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $_brown;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .sss-text-title {
+    font-size: 18px;
+  }
+
+  .sss-text-content {
+    font-size: 28px;
+  }
+
+  .sss-card-text {
+    font-size: 20px;
+  }
+
+  .sss-card-text-content {
+    font-size: 18px;
+  }
+}

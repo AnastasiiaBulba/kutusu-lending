@@ -1,0 +1,55 @@
+@import './common/vars';
+
+.bize-wrap-text {
+  border-top: 1px solid $_brown;
+}
+
+.bize-text-title {
+  padding-top: 8px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $_graybrown;
+}
+
+.bize-text-content {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: $_graybrown;
+  padding-bottom: 40px;
+}
+
+.bize-contact {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $_brown;
+}
+
+.bize-tel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $_brown;
+  cursor: pointer;
+}
+
+.bize-mail {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $_brown;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .bize-text-title {
+    font-size: 18px;
+  }
+
+  .bize-text-content {
+    font-size: 28px;
+  }
+}

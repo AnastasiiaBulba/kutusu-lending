@@ -1,0 +1,135 @@
+@import './common/vars';
+
+.müşteri {
+  scroll-margin-top: 80px;
+  background-color: $_biege;
+}
+
+.müşteri-wrap-text {
+  border-top: 1px solid $_brown;
+  border-bottom: 1px solid $_brown;
+  margin-bottom: 40px;
+}
+
+.müşteri-text-title {
+  padding-top: 8px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $_graybrown;
+}
+
+.müşteri-text-content {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: $_graybrown;
+  padding-bottom: 40px;
+}
+
+.img1 img {
+  padding-bottom: 40px;
+}
+
+.müşteri-wrap-swaper {
+  display: flex;
+  flex-direction: column;
+}
+
+.müşteri-card {
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.müşteri-card-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $_brown;
+  width: 343px;
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+
+.müşteri-card-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: right;
+  color: $_brown;
+}
+
+.musteri-wrap-btn {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-end;
+}
+
+.musteri-btn-left {
+  all: unset;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.musteri-btn-right {
+  all: unset;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .müşteri-text-title {
+    font-size: 18px;
+  }
+
+  .müşteri-text-content {
+    font-size: 28px;
+  }
+
+  .müşteri-wrap-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .img1 img {
+    padding-bottom: 0;
+  }
+
+  .müşteri-wrap-swaper {
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    height: 328px;
+
+    position: relative;
+  }
+
+  .müşteri-card {
+    width: 544px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .müşteri-card-text {
+    font-size: 18px;
+    width: 544px;
+  }
+
+  .müşteri-card-name {
+    font-size: 20px;
+  }
+
+  .musteri-wrap-btn {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+  }
+}

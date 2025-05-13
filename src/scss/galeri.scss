@@ -1,0 +1,42 @@
+@import './common/vars';
+
+.gallery {
+  scroll-margin-top: 80px;
+}
+
+.gallery-wrap-text {
+  border-top: 1px solid $_brown;
+}
+
+.gallery-text-title {
+  padding-top: 8px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $_graybrown;
+}
+
+.gallery-card {
+  cursor: pointer;
+}
+
+.nedenSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto !important;
+}
+
+.nedenSwiper img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery-text-title {
+    font-size: 18px;
+  }
+}
